@@ -13,3 +13,12 @@ let quotes = [
 
 let quoteListElm = document.querySelector(".siteFooter__quote blockquote");
 let i = 0;
+
+/* let random = Math.floor(Math.random()*quoteListElm.length);
+console.log(random, quoteListElm[random]);
+ */
+
+var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
+document.body.innerHTML = randomQuote;
+console.log(quotes[randomQuote]);
+console.log(quoteListElm);
