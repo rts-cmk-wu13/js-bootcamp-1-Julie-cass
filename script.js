@@ -19,6 +19,6 @@ console.log(random, quoteListElm[random]);
  */
 
 var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
-document.body.innerHTML = randomQuote;
+document.getElementById('blockquote').innerHTML = randomQuote;
 console.log(quotes[randomQuote]);
 console.log(quoteListElm);
